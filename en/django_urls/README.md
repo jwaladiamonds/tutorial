@@ -82,6 +82,7 @@ After that, we can add our first URL pattern:
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
+app_name = 'blogpost'
 urlpatterns = [
     path('', views.post_list, name='post_list'),
 ]

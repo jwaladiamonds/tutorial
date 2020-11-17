@@ -60,6 +60,7 @@ Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `p
 from django.urls import path
 from . import views
 
+app_name = 'blogpost'
 urlpatterns = [
     path('', views.post_list, name='post_list'),
     path('post/<int:pk>/', views.post_detail, name='post_detail'),
